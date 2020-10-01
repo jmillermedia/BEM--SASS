@@ -1,8 +1,8 @@
-.card {
+.card { // this is the initial element. The styles will be broken down into different elements below the main element.
     padding: 0 5em;
     width: 400px;
 
-        &__img {
+        &__img { // "&" indicates the parent element. here "&" will register as ".card"
             display: block;
             height: 100px;
             width: 100%;
@@ -28,7 +28,7 @@
         border-radius: .3em;
         font-size: .85em;
         
-            &--active {
+            &--active { // with BEM a double dash "--" indicates a modifier of the previous element. Here ".card__item" will get the modifier of "--active".
                 background: #d4d4d4;
                 font-weight: bold;
             }
@@ -43,7 +43,7 @@
             display: inline-block;
             margin-top: .5em;
 
-            &:hover {
+            &:hover { // & can also be used for a selector as well. "&:hover" will read as ".card__link:hover". 
                 background: #267724;
             }
         }
