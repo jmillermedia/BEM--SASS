@@ -1,3 +1,5 @@
+// it is very important that each module begins with an underscore. This tells SASS that the file is a partial rather than a full sass file. 
+
 .card { // this is the initial element. The styles will be broken down into different elements below the main element.
     padding: 0 5em;
     width: 400px;
@@ -6,7 +8,7 @@
             display: block;
             height: 100px;
             width: 100%;
-            background: #e0466b;
+            background: #e04646;
         }
 
         &__content {
